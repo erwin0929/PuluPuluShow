@@ -1,0 +1,59 @@
+// vantui 样式补丁
+html{
+  .van-toast{
+    width: auto;
+  }
+  .van-area{
+    font-size: 30px;
+  }
+  .van-loading{
+    $size: 80px;
+    width: $size;
+    height: $size;
+  }
+  .van-picker-column{
+    font-size: inherit;
+  }
+  .van-swipe__indicator{
+    $size: 12px;
+    width: $size;
+    height: $size;
+    &:not(:last-child){
+      margin-right: 9px;
+    }
+  }
+  .van-swipe__indicator--active{
+    background-color: $site_color;
+  }
+  .van-toast--default{
+    padding: 30px;
+    .van-toast__text{
+      font-size: 27px;
+      white-space: nowrap;
+      padding-top: 20px;
+    }
+    .van-toast__icon{
+      font-size: 85px;
+    }
+  }
+  .van-picker{
+    font-size: 30px;
+  }
+  .van-picker__cancel,
+  .van-picker__confirm{
+    font-size: inherit;
+  }
+  .van-picker__title{
+    font-size: 30px;
+  }
+  .van-picker__toolbar{
+    height: 85px;
+    display: flex;
+    align-items: center;
+  }
+  .van-cell__title{
+    height: 85px;
+    display: flex;
+    align-items: center;
+  }
+}

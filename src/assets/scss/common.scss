@@ -1,0 +1,31 @@
+// 向右箭头
+@mixin arrow_r($border_c: #033333, $size: 18){
+  @if(unitless($size) == true) {
+    $size: #{$size}px;
+  }
+  &::after{
+    content: '';
+    border: 1px solid #{$border_c};/*no*/
+    border-bottom-width: 0;
+    border-left-width: 0;
+    width: $size;
+    height: $size;
+    transform: translate3d(-50%, -50%, 0) rotate(45deg);
+    transform-origin: left bottom;
+  }
+}
+
+// 分隔符
+@mixin split($h: 25, $bgc: #ececec){
+  // 若参数没有单位,则自动填充px
+  @if(unitless($h) == true) {
+    $h: #{$h}px;
+  }
+  &::after{
+    width: 100%;
+    display: block;
+    content: '';
+    background: $bgc;
+    height: $h;
+  }
+}

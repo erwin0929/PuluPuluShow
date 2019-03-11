@@ -1,0 +1,43 @@
+// 登录页注册页的全局样式
+// 输入框圆角
+$input_bor_rad: 10px; /*no*/
+
+// 输入框高度
+$input_h: 70px;
+
+// 字体大小
+$input_fz: 26px;
+
+.input-style{
+  border-radius: $input_bor_rad; /*no*/
+  height: $input_h;
+  line-height: $input_h;
+  font-size: $input_fz;
+}
+
+// 清除按钮大小
+.mintui{
+  font-size: 35px;
+}
+  // 输入框样式
+.mint-field{
+  padding-left: 15px;
+  margin-bottom: 30px;
+  @extend .input-style
+}
+
+.input-box{
+  margin-bottom: 20px;
+  position: relative;
+}
+
+// 验证码分隔符
+.split{
+  $po: 8px;
+  width: 1px; /*no*/
+  position: absolute;
+  top: $po; /*no*/
+  bottom: $po; /*no*/
+  left: 400px;
+  background: #bfbfbf;
+}

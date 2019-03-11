@@ -1,0 +1,37 @@
+// 整站配色
+$site_color: #fee330;
+
+// 两边边距
+$side_pad: 20px;
+
+// 分割线的颜色
+$split_line: #cbcccd;
+
+// 页面间切换的动画时长
+$loading_time: 0.2s;
+
+// 搜索和购物车icon所在的高度
+$header_h: 90px;
+
+// 导航未固定时的高度,默认状态
+$navHeight: 75px;
+
+// 导航固定时的高度
+$navFixHeight: 70px;
+
+// 计算出顶部导航栏的高度
+$nav_h: $header_h + $navHeight;
+
+// 小icon做成雪碧图后的宽和高
+$icon_size: 35px;
+
+// 底部按钮区,为了一屏显示的按钮
+$bottom_action: 90px;
+
+// *** 用户管理 ***
+// 输入框和按钮的圆角弧度
+$raduis: 15px;
+
+// 输入框和按钮高度
+$inp_h: 75px;
+

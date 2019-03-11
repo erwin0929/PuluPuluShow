@@ -1,0 +1,24 @@
+<!-- 过渡动画组件 -->
+<template>
+  <transition :name="name" :mode="mode">
+    <slot />
+  </transition>
+</template>
+
+<script>
+import {mapState} from 'vuex'
+export default {
+  props: {
+    name: {
+      require: false,
+      type: String,
+      default: 'fade'
+    },
+    mode: {
+      require: false,
+      type: String,
+      default: 'out-in'
+    }
+  }
+}
+</script>

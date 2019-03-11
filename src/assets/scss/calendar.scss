@@ -1,0 +1,61 @@
+// 日历样式补丁
+html{
+  $fz: 25px;
+  $back-c: #f4f4f4;
+  [class]{
+    &.wh_content{
+      display: flex;
+      justify-content: center;
+    }
+    &.wh_container{
+      width: 100%;
+      max-width: none;
+    }
+    &.wh_content_all{
+      width: 100%;
+      background-color: $back-c;
+    }
+    &.wh_item_date{
+      $size: 50px;
+      width: $size;
+      height: $size;
+      border-radius: 50% !important; /*no*/
+      &.wh_chose_day{
+        background-color: $site_color;
+      }
+      &:hover{
+        //background-color: transparent !important;
+      }
+    }
+    &.wh_isToday{
+      background-color: $site_color !important;
+    }
+    &.wh_content_item{
+      font-size: $fz;
+      color: #666 !important;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    $c: #353535;
+    &.wh_content_li{
+      font-size: $fz !important;
+      color: $c !important;
+      font-weight: 700;
+    }
+    &.wh_top_changge{
+      height: 90px;
+      display: flex;
+      align-items: center;
+    }
+    &.wh_jiantou1,
+    &.wh_jiantou2{
+      $size: 20px;
+      width: $size;
+      height: $size;
+      border-color: $c;
+      border-width: 1px; /*no*/
+    }
+  }
+}
